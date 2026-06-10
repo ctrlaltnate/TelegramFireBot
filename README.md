@@ -94,6 +94,10 @@ TELEGRAM_COOLDOWN = 20
 
 # 5. ชื่อไฟล์โมเดล AI ตรวจจับอัคคีภัยที่ต้องการใช้งาน
 MODEL_PATH = "wildfire-dt-model.eim"
+
+# 6. พิกัดละติจูดและลองจิจูดของกล้องตรวจจับ (เพื่อสร้างลิงก์ Google Maps)
+LATITUDE = "-"
+LONGITUDE = "-"
 ```
 
 ---
