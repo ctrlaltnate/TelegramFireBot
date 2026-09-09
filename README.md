@@ -14,27 +14,23 @@
    - [การคำนวณระดับควัน MQ-2 เป็นหน่วย ppm](#4-การคำนวณระดับควัน-mq-2-เป็นหน่วย-ppm)
 3. [ผังการต่อวงจรและพินฮาร์ดแวร์ (Hardware Wiring & Pinout Guide)](#-ผังการต่อวงจรและพินฮาร์ดแวร์-hardware-wiring--pinout-guide)
    - [ตารางการต่อสายอุปกรณ์](#ตารางการต่อสายอุปกรณ์)
-   - [คำแนะนำและข้อควรระวังเรื่องแรงดันไฟฟ้า](#คำแนะนำและข้อควรระวังเรื่องแรงดันไฟฟ้า)
-   - [พื้นที่ใส่รูปภาพผังการต่อวงจรและอุปกรณ์จริง](#พื้นที่ใส่รูปภาพผังการต่อวงจรและอุปกรณ์จริง)
+   - [คำแนะนำและข้อควรระวังเรื่องแรงดันไฟฟ้าและเซนเซอร์](#คำแนะนำและข้อควรระวังเรื่องแรงดันไฟฟ้าและเซนเซอร์)
 4. [การแสดงผล Web Dashboard และการปรับเปลี่ยนค่าบนเว็บ (Web Interface & Live Controls)](#-การแสดงผล-web-dashboard-และการปรับเปลี่ยนค่าบนเว็บ-web-interface--live-controls)
    - [องค์ประกอบหน้าจอแดชบอร์ด](#องค์ประกอบหน้าจอแดชบอร์ด)
    - [การปรับเปลี่ยนค่าเกณฑ์แจ้งเตือนผ่านสไลเดอร์แบบ Real-time](#การปรับเปลี่ยนค่าเกณฑ์แจ้งเตือนผ่านสไลเดอร์แบบ-real-time)
    - [กลไกการซิงค์ค่าระหว่าง Web Client และ Python Backend](#กลไกการซิงค์ค่าระหว่าง-web-client-และ-python-backend)
-   - [พื้นที่ใส่รูปภาพหน้าจอ Web Dashboard](#พื้นที่ใส่รูปภาพหน้าจอ-web-dashboard)
 5. [ขั้นตอนการนำเข้าสู่ Arduino App Lab (Importing App Guide)](#-ขั้นตอนการนำเข้าสู่-arduino-app-lab-importing-app-guide)
    - [การเตรียมไฟล์และโครงสร้างโฟลเดอร์](#การเตรียมไฟล์และโครงสร้างโฟลเดอร์)
    - [ขั้นตอนการ Import ทีละขั้นตอน](#ขั้นตอนการ-import-ทีละขั้นตอน)
-   - [พื้นที่ใส่รูปภาพขั้นตอนการ Import](#พื้นที่ใส่รูปภาพขั้นตอนการ-import)
 6. [การตั้งค่าให้แอปทำงานอัตโนมัติเมื่อเปิดเครื่อง (Autostart on Boot)](#-การตั้งค่าให้แอปทำงานอัตโนมัติเมื่อเปิดเครื่อง-autostart-on-boot)
    - [ขั้นตอนการเปิดใช้งาน Autostart](#ขั้นตอนการเปิดใช้งาน-autostart)
    - [การนำไปติดตั้งใช้งานจริงแบบ Standalone](#การนำไปติดตั้งใช้งานจริงแบบ-standalone)
-   - [พื้นที่ใส่รูปภาพการตั้งค่า Autostart](#พื้นที่ใส่รูปภาพการตั้งค่า-autostart)
 7. [คู่มือการเปลี่ยนและอัปเดตโมเดล AI และปรับแต่ง Keyword (AI Model & Keyword Customization Guide)](#-คู่มือการเปลี่ยนและอัปเดตโมเดล-ai-และปรับแต่ง-keyword-ai-model--keyword-customization-guide)
-   - [ขั้นตอนที่ 1: การดาวน์โหลดและเตรียมไฟล์โมเดลใหม่ (.eim)](#ขั้นตอนที่-1-การดาวน์โหลดและเตรียมไฟล์โมเดลใหม่-eim)
-   - [ขั้นตอนที่ 2: การอ้างอิงชื่อโมเดลใน app.yaml และ main.py](#ขั้นตอนที่-2-การอ้างอิงชื่อโมเดลใน-appyaml-และ-mainpy)
-   - [ขั้นตอนที่ 3: การกำหนด Keyword เฉพาะที่หัวโค้ด Python](#ขั้นตอนที่-3-การกำหนด-keyword-เฉพาะที่หัวโค้ด-python)
-   - [ขั้นตอนที่ 4: การแก้ไขหน้าเว็บไซต์แบบครบถ้วน (Website Customization Guide)](#ขั้นตอนที่-4-การแก้ไขหน้าเว็บไซต์แบบครบถ้วน-website-customization-guide)
-   - [ขั้นตอนที่ 5: การลบแอปเดิมและ Import ใหม่ใน App Lab เพื่อล้างแคช](#ขั้นตอนที่-5-การลบแอปเดิมและ-import-ใหม่ใน-app-lab-เพื่อล้างแคช)
+   - [ขั้นตอนที่ 1: ดาวน์โหลดโมเดลใหม่ เปลี่ยนชื่อเป็นชื่อเดิม แล้ววางทับ (วิธีแนะนำ: ง่ายที่สุด 100%)](#ขั้นตอนที่-1-ดาวน์โหลดโมเดลใหม่-เปลี่ยนชื่อเป็นชื่อเดิม-แล้ววางทับ-วิธีแนะนำ-ง่ายที่สุด-100)
+   - [ขั้นตอนที่ 2: กำหนด Keyword และธีมที่หัวโค้ด Python (แก้ที่เดียว เว็บเปลี่ยนตามทั้งหมด!)](#ขั้นตอนที่-2-กำหนด-keyword-และธีมที่หัวโค้ด-python-แก้ที่เดียว-เว็บเปลี่ยนตามทั้งหมด)
+   - [ขั้นตอนที่ 3: (ทางเลือกเสริม) การเปลี่ยนชื่อแอปในการ์ดของ App Lab](#ขั้นตอนที่-3-ทางเลือกเสริม-การเปลี่ยนชื่อแอปในการ์ดของ-app-lab)
+   - [ขั้นตอนที่ 4: การลบแอปเดิมและ Import ใหม่ใน App Lab เพื่อล้างแคช](#ขั้นตอนที่-4-การลบแอปเดิมและ-import-ใหม่ใน-app-lab-เพื่อล้างแคช)
+   - [กรณีพิเศษ: หากต้องการตั้งชื่อไฟล์โมเดลเป็นชื่ออื่นจริงๆ](#กรณีพิเศษ-หากต้องการตั้งชื่อไฟล์โมเดลเป็นชื่ออื่นจริงๆ-ไม่แนะนำเพราะต้องแก้หลายจุด)
 8. [โครงสร้างไฟล์และโค้ดอย่างละเอียด (Project & Code Structure)](#-โครงสร้างไฟล์และโค้ดอย่างละเอียด-project--code-structure)
 9. [การปรับแต่งพารามิเตอร์ระบบในโค้ด (Advanced Configuration)](#-การปรับแต่งพารามิเตอร์ระบบในโค้ด-advanced-configuration)
 10. [การแก้ปัญหาที่พบบ่อย (Troubleshooting & FAQ)](#-การแก้ปัญหาที่พบบ่อย-troubleshooting--faq)
@@ -109,25 +105,6 @@ flowchart TD
     JS <--> HTML
     JS -->|override_fire_th & override_smoke_th| MAIN
     MAIN -->|Send Photo & Caption| TEL_GATEWAY --> TELEGRAM
-    SERVO_THREAD -.->|Non-blocking Cycle| MAIN
-```
-
-    subgraph Cloud["📱 Cloud & Telegram Services"]
-        TELEGRAM["🚨 Telegram App (แจ้งเตือนพร้อมภาพถ่าย Snapshot)"]
-    end
-
-    CAM -->|V4L2 /dev/video2| MAIN
-    MAIN -->|Frame RGB| MODEL
-    MQ2 -->|Analog Signal| MQ2_READER
-    MQ2_READER --> INO
-    INO --> NOTIFY --> MAIN
-    MAIN --> CONVERT
-    MAIN -->|RPC Call| RPC_SERVO --> SERVO_CTRL --> SERVO
-    MAIN -->|Base64 Video & Telemetry| JS
-    JS <--> HTML
-    JS -->|override_fire_th & override_smoke_th| MAIN
-    MAIN -->|Send Photo & Caption| TEL_GATEWAY --> TELEGRAM
-    SERVO_THREAD -.->|Non-blocking Cycle| MAIN
 ```
 
 ### 1. สถาปัตยกรรม Dual-Brain
@@ -194,60 +171,22 @@ $$\text{ppm} = 50.0 \times \left(1.0 + \left(\frac{\text{raw}}{80.0}\right)^{1.8
 
 ---
 
-### พื้นที่ใส่รูปภาพผังการต่อวงจรและอุปกรณ์จริง
-
-> 📸 **[ช่องใส่รูปภาพที่ 1: ผังวงจรไดอะแกรมการต่อสาย (Schematic / Wiring Diagram)]**
->
-> *(นำไฟล์รูปภาพผังวงจรมาบันทึกในโฟลเดอร์ `assets/images/wiring_diagram.png` หรือเปลี่ยนที่อยู่รูปภาพในบรรทัดด้านล่าง)*
->
-> ![Hardware Wiring Diagram](assets/images/wiring_diagram.png)
-
-<br>
-
-> 📸 **[ช่องใส่รูปภาพที่ 2: ภาพถ่ายการต่อวงจรฮาร์ดแวร์จริง (Actual Hardware Setup)]**
->
-> *(นำภาพถ่ายบอร์ด Arduino UNO Q ที่ต่อเข้ากับ MQ-2, Servo Motor และ USB Webcam มาบันทึกในโฟลเดอร์ `assets/images/hardware_setup.jpg`)*
->
-> ![Actual Hardware Setup](assets/images/hardware_setup.jpg)
-
----
-
 ## 💻 การแสดงผล Web Dashboard และการปรับเปลี่ยนค่าบนเว็บ (Web Interface & Live Controls)
 
 ระบบ TelegramFireBot มาพร้อมกับหน้าจอแดชบอร์ด **Web Dashboard** ควบคุมและแสดงผลแบบเรียลไทม์ผ่าน WebSocket (Socket.IO) ทำงานที่พอร์ต **`7000`** (หรือ `8080` ตามคอนฟิก):
 - เข้าใช้งานภายในบอร์ด: `http://localhost:7000`
 - เข้าใช้งานจากคอมพิวเตอร์หรือสมาร์ตโฟนผ่าน Wi-Fi วงเดียวกัน: `http://<IP_ของบอร์ด_UNO_Q>:7000`
 
-```
-+-----------------------------------------------------------------------------------+
-|  🔥 Fire & Smoke AI - Safeguard Monitoring System            ● Connected (Green) |
-+-----------------------------------------------------------------------------------+
-| [ แผงหลัก: วิดีโอสด ]             | [ แผงด้านข้าง: Telemetry & Controls ]         |
-|                                  |                                               |
-| +------------------------------+ | 📊 Telemetry Status                           |
-| | 🔴 LIVE FEED                  | | - Fire Level (AI):  [████████░░░] 82.5% (Red)  |
-| |                              | | - Smoke Level:      [████░░░░░░] 750 ppm     |
-| |   [ กล้อง USB Webcam ]        | |   Sensor Raw (A0): 405                      |
-| |                              | |                                               |
-| | ┌──────────────────────────┐ | | 🌡️ Climate & Ambient (DHT22 Pin D2)           |
-| | │ HUD TELEMETRY OVERLAY    │ | | - Temp:     [████░░░░░░] 28.5 °C              |
-| | │ Fire (AI): 82.5% (Th:80%)│ | | - Humidity: [██████░░░░] 65.0 %               |
-| | │ Smoke: 750 ppm (Th:600)  │ | |                                               |
-| | │ DHT22: 28.5C | 65.0%     │ | | ⚙️ Servo Actuator (Pin 9)                     |
-| | │ Servo: ACTIVE (90 deg)   │ | | - Status: ACTIVE (90°)                        |
-| | └──────────────────────────┘ | | - Angle Position: 90°                        |
-| |                              | | - Cooldown: 60s                               |
-| |   [กรอบ AI Bounding Box ไฟ]  | |                                               |
-| +------------------------------+ | 🎚️ Alert Thresholds (Real-time Sliders)       |
-|                                  | - 🔥 Fire Camera Threshold: [====O====] 80%   |
-|                                  | - 💨 Smoke Sensor Threshold:[==O======] 600ppm|
-|                                  |                                               |
-|                                  | 🚨 Telegram Gateway                           |
-|                                  | - Total Dispatched: 3                         |
-|                                  | - Last Status: Success                        |
-|                                  | - History Logs: [14:25:30, 14:26:15]          |
-+-----------------------------------------------------------------------------------+
-```
+| ส่วนหน้าจอ (Dashboard Section) | องค์ประกอบ | ข้อมูลที่แสดงผลและการทำงาน |
+| :--- | :--- | :--- |
+| **ฝั่งซ้าย: แผงกล้องสด (Live Feed)** | **🔴 Live Video Feed** | สตรีมวิดีโอสด 640x480 (~25 FPS) จากกล้อง USB Webcam ผ่าน Base64 JPEG |
+| | **AI Bounding Box** | กรอบสี่เหลี่ยมสีแดงครอบตำแหน่งเปลวไฟ พร้อมเปอร์เซ็นต์ความมั่นใจของโมเดล |
+| | **HUD Overlay (มุมบนซ้าย)** | กล่องมอนิเตอร์สดบนวิดีโอ: `Fire (AI)`, `Smoke (MQ2)`, `DHT22 (D2)`, `Servo` |
+| **ฝั่งขวา: แผงควบคุมและสถานะ** | **📊 Telemetry Status** | มาตรวัดระดับไฟ `Fire Level (AI)` (0–100%) และระดับควัน `Smoke Level` (ppm) |
+| | **🌡️ Climate & Ambient** | เซนเซอร์ DHT-22 (Pin D2) แสดงอุณหภูมิ (°C) และความชื้นสัมพัทธ์ (%) |
+| | **⚙️ Servo Actuator** | สถานะมอเตอร์เซอร์โว `STANDBY` / `ACTIVE (90°)` / `COOLDOWN (60s)` |
+| | **🎚️ Alert Thresholds** | สไลเดอร์ปรับเกณฑ์ `Fire Threshold` (1–100%) และ `Smoke Threshold` (ppm) |
+| | **🚨 Telegram Gateway** | จำนวนข้อความที่ส่งสำเร็จ (`Total Dispatched`) และประวัติการแจ้งเตือน 5 ครั้งล่าสุด |
 
 ### องค์ประกอบหน้าจอแดชบอร์ด
 
@@ -260,18 +199,16 @@ $$\text{ppm} = 50.0 \times \left(1.0 + \left(\frac{\text{raw}}{80.0}\right)^{1.8
      - `DHT22 (D2): XX.XC | XX.X%`
      - `Servo (Pin 9): STATE (Angle/Countdown)`
 2. **📊 Telemetry Status (มาตรวัดระดับเซนเซอร์)**
-   - แสดงระดับความมั่นใจของ AI พร้อมแถบ Progress Bar (เปลี่ยนเป็นสีแดงเมื่อ $\ge$ Threshold)
-   - แสดงระดับควัน MQ-2 ในหน่วย ppm พร้อมแสดงค่าดิบ Analog ADC (0–1023)
-3. **🌡️ Climate & Ambient (สภาพแวดล้อม DHT22 Pin D2)**
-   - แสดงค่าอุณหภูมิห้อง/สภาพแวดล้อม (°C) และความชื้นสัมพัทธ์ (%) พร้อมแถบสี Gradient ส้ม/ฟ้า แสดงสภาวะอากาศแบบ Real-time โดยไม่รบกวนระบบเตือนภัยหลัก
    - **🔥 Fire Level (AI)**: มาตรวัดความมั่นใจของ AI พร้อมแท่ง Progress Bar แสดง 0–100% (ตัวเลขและแท่งจะเปลี่ยนจากสีเขียวเป็นสีแดงทันทีเมื่อระดับไฟแตะเกณฑ์)
    - **💨 Smoke Level (MQ-2 A0)**: แสดงความเข้มข้นของควันเป็นหน่วย **ppm** พร้อมแท่ง Progress Bar สเกล 0–3,000 ppm และแสดงค่าดิบ `Sensor Raw (A0): XXX` ด้านล่าง
-3. **⚙️ Servo Actuator Panel (แผงสถานะเซอร์โว Pin 9)**
+3. **🌡️ Climate & Ambient (สภาพแวดล้อม DHT22 Pin D2)**
+   - แสดงค่าอุณหภูมิห้อง/สภาพแวดล้อม (°C) และความชื้นสัมพัทธ์ (%) พร้อมแถบสี Gradient ส้ม/ฟ้า แสดงสภาวะอากาศแบบ Real-time (เป็นข้อมูลสภาพแวดล้อมอ้างอิงเท่านั้น ไม่นำไปใช้ทริกเกอร์เตือนภัย)
+4. **⚙️ Servo Actuator Panel (แผงสถานะเซอร์โว Pin 9)**
    - แสดงสถานะการทำงาน 3 สภาวะ:
      - **`STANDBY` (สีเขียว)**: เซอร์โวหยุดนิ่ง ตัดสัญญาณ PWM (`detach`) ไร้การสั่นไหว
      - **`ACTIVE` (สีแดง)**: กำลังหมุนไปที่ 90 องศาเพื่อเปิดระบบดับเพลิง (หน่วงเวลา 10 วินาที)
      - **`COOLDOWN` (สีส้ม)**: หมุนกลับมาที่ 0 องศา ตัดสัญญาณ PWM และแสดงเวลานับถอยหลัง `60s... 59s...`
-4. **🚨 Telegram Gateway Panel (ประวัติการส่งแจ้งเตือน)**
+5. **🚨 Telegram Gateway Panel (ประวัติการส่งแจ้งเตือน)**
    - แสดงตัวเลขจำนวนครั้งที่ส่งแจ้งเตือนสำเร็จ (`Total Dispatched`)
    - แสดงสถานะล่าสุดของการส่ง (`Last Gateway Status: Standby / Success / Failed`)
    - กล่อง `History Logs` แสดงประวัติเวลาของเหตุการณ์ฉุกเฉินล่าสุด
@@ -318,24 +255,6 @@ sequenceDiagram
 
 > [!TIP]
 > **ไม่ต้องหยุดโปรแกรม ไม่ต้องรีสตาร์ต:** การปรับสไลเดอร์บนหน้าเว็บจะส่งสัญญาณผ่าน Socket.IO อัปเดตตัวแปรในหน่วยความจำของ Python ทันที ทำให้คุณสามารถจูนเกณฑ์ความไวของเซนเซอร์และกล้องให้เข้ากับแสงและควันในห้องทดสอบได้แบบสดๆ ตลอดเวลา
-
----
-
-### พื้นที่ใส่รูปภาพหน้าจอ Web Dashboard
-
-> 📸 **[ช่องใส่รูปภาพที่ 3: หน้าจอ Web Dashboard สภาวะปกติ (Normal Standby State)]**
->
-> *(นำภาพหน้าจอแดชบอร์ดขณะไม่มีไฟและควัน บันทึกในโฟลเดอร์ `assets/images/web_dashboard_standby.png`)*
->
-> ![Web Dashboard Standby](assets/images/web_dashboard_standby.png)
-
-<br>
-
-> 📸 **[ช่องใส่รูปภาพที่ 4: หน้าจอ Web Dashboard ขณะตรวจพบไฟและควัน (Alert & Active State)]**
->
-> *(นำภาพหน้าจอแดชบอร์ดที่มีกรอบ AI สีแดงตีกรอบไฟ และระดับควันพุ่งสูง บันทึกในโฟลเดอร์ `assets/images/web_dashboard_alert.png`)*
->
-> ![Web Dashboard Alert](assets/images/web_dashboard_alert.png)
 
 ---
 
@@ -389,24 +308,6 @@ TelegramFireBot/
 
 ---
 
-### พื้นที่ใส่รูปภาพขั้นตอนการ Import
-
-> 📸 **[ช่องใส่รูปภาพที่ 5: หน้าจอการกด Import App ในโปรแกรม Arduino App Lab]**
->
-> *(นำภาพหน้าจอขั้นตอนการกดเลือกไฟล์ Zip หรือโฟลเดอร์ใน App Lab มาบันทึกใน `assets/images/app_lab_import.png`)*
->
-> ![App Lab Import](assets/images/app_lab_import.png)
-
-<br>
-
-> 📸 **[ช่องใส่รูปภาพที่ 6: หน้าจอการกดปุ่ม Run และดู Log การทำงาน]**
->
-> *(นำภาพหน้าจอขณะกด Run สำเร็จและมีคอนโซลแสดงผลมาบันทึกใน `assets/images/app_lab_run.png`)*
->
-> ![App Lab Run](assets/images/app_lab_run.png)
-
----
-
 ## ⚡ การตั้งค่าให้แอปทำงานอัตโนมัติเมื่อเปิดเครื่อง (Autostart on Boot)
 
 เมื่อคุณต้องการนำบอร์ด Arduino UNO Q ไปประกอบลงกล่อง และติดตั้งในอาคารหรือโรงงานเพื่อใช้งานเป็นอุปกรณ์เตือนภัยอัคคีภัยแบบ **Standalone (ทำงานเดี่ยวๆ โดยไม่ต้องต่อคอมพิวเตอร์)** คุณต้องเปิดใช้งานฟังก์ชัน **Autostart**:
@@ -421,17 +322,12 @@ TelegramFireBot/
 5. เลื่อนสวิตช์ให้เป็น **ON (เปิดใช้งาน)**
 6. สังเกตจะมีสัญลักษณ์ไอคอนรูปเข็มกลัดหรือข้อความสีเขียวระบุว่า **`Autostart: Enabled`** บนการ์ดแอป
 
-```
-+-------------------------------------------------------------+
-| 🔥 TelegramFireBot                             [ Run / Stop ]|
-| Fire and Smoke Detection with Telegram Alert                 |
-|                                                             |
-| Status: Installed                                           |
-| Autostart: [  ON  ] ⚡ (Runs automatically on device boot)   |
-| Ports: 7000 / 8080                                          |
-|                                         [ Logs ] [ Settings ]|
-+-------------------------------------------------------------+
-```
+> ⚡ **ข้อมูลบนการ์ดแอปเมื่อเปิด Autostart สำเร็จ:**
+> - **ชื่อแอป:** `🔥 TelegramFireBot`
+> - **คำอธิบาย:** `Fire and Smoke Detection with Telegram Alert`
+> - **สถานะ (Status):** `Installed`
+> - **การทำงานอัตโนมัติ (Autostart):** `[ ON ] ⚡ (Runs automatically on device boot)`
+> - **พอร์ตการเชื่อมต่อ (Ports):** `7000 / 8080`
 
 ### การนำไปติดตั้งใช้งานจริงแบบ Standalone
 
@@ -445,119 +341,99 @@ TelegramFireBot/
 
 ---
 
-### พื้นที่ใส่รูปภาพการตั้งค่า Autostart
-
-> 📸 **[ช่องใส่รูปภาพที่ 7: การเปิดสวิตช์ Autostart บนการ์ดแอปใน Arduino App Lab]**
->
-> *(นำภาพหน้าจอการคลิกเปิด Autostart มาบันทึกใน `assets/images/app_lab_autostart.png`)*
->
-> ![App Lab Autostart](assets/images/app_lab_autostart.png)
-
----
-
----
-
 ## 🧠 คู่มือการเปลี่ยนและอัปเดตโมเดล AI และปรับแต่ง Keyword (AI Model & Keyword Customization Guide)
 
-หากคุณต้องการเปลี่ยนไปใช้โมเดลใหม่ที่เทรนเองจาก **Edge Impulse** ไม่ว่าจะเป็นโมเดลตรวจจับไฟรุ่นปรับปรุง หรือต้องการนำระบบไปประยุกต์ใช้กับงานตรวจจับประเภทอื่น (เช่น ตรวจจับคน `person`, ตรวจหมวกนิรภัย `helmet`, ตรวจจับยานพาหนะ `car` หรือตรวจจับควัน `smoke`) คุณสามารถดำเนินการตามขั้นตอนอย่างละเอียดด้านล่างนี้ได้ทันที:
+หากคุณต้องการเปลี่ยนไปใช้โมเดลใหม่ที่เทรนเองจาก **Edge Impulse** ไม่ว่าจะเป็นโมเดลตรวจจับไฟรุ่นปรับปรุง หรือต้องการนำระบบไปประยุกต์ใช้กับงานตรวจจับประเภทอื่น (เช่น ตรวจจับคน `person`, ตรวจหมวกนิรภัย `helmet`, ยานพาหนะ `car` หรือควัน `smoke`) **วิธีที่ง่ายและสะดวกที่สุดคือ: เปลี่ยนชื่อโมเดลใหม่ให้เป็นชื่อเดิมแล้ววางทับ โดยไม่ต้องแก้โค้ดคอนฟิกเลย!**
 
 ---
 
-### ขั้นตอนที่ 1: การดาวน์โหลดและเตรียมไฟล์โมเดลใหม่ (.eim)
+### ขั้นตอนที่ 1: ดาวน์โหลดโมเดลใหม่ เปลี่ยนชื่อเป็นชื่อเดิม แล้ววางทับ (วิธีแนะนำ: ง่ายที่สุด 100%)
 
-1. เข้าสู่โปรเจกต์ของคุณบน [Edge Impulse Studio](https://studio.edgeimpulse.com/)
-2. ไปที่แถบเมนู **Deployment** ทางซ้ายมือ
-3. ในช่องค้นหา Deployment options ให้พิมพ์เลือก **Linux (ARM)** หรือ **Linux (AARCH64)** ตามสถาปัตยกรรมชิป
-4. คลิกปุ่ม **Build** เพื่อสร้างแพ็กเกจไบนารี จะได้ไฟล์นามสกุล `.eim` (เช่น `my-detection-model.eim`)
-5. นำไฟล์ `.eim` ที่ดาวน์โหลดมา วางไว้ในโฟลเดอร์รากของโปรเจกต์ (โฟลเดอร์เดียวกับ `app.yaml`)
-   - *เทคนิคสะดวก*: หากตั้งชื่อไฟล์ว่า `wildfire-dt-model.eim` แทนที่ไฟล์เดิม คุณจะไม่ต้องแก้ `app.yaml` เลย
-   - *กรณีตั้งชื่อใหม่*: หากตั้งชื่อว่า `custom-model.eim` ให้ทำขั้นตอนที่ 2 ต่อไป
+> [!TIP]
+> **🌟 เคล็ดลับสุดง่าย (The Simplest & Recommended Way):**
+> คุณ**ไม่ต้องเข้าไปแก้ไขโค้ดใน `app.yaml` หรือแก้ชื่อไฟล์ใน `python/main.py` เลยแม้แต่บรรทัดเดียว!**
+> เพียงแค่ **เปลี่ยนชื่อไฟล์โมเดลใหม่ที่เพิ่งดาวน์โหลดมา ให้กลายเป็นชื่อเดิมคือ `wildfire-dt-model.eim`** แล้วนำไปวางทับไฟล์เดิมได้ทันที!
 
----
-
-### ขั้นตอนที่ 2: การอ้างอิงชื่อโมเดลใน app.yaml และ main.py
-
-หากคุณตั้งชื่อไฟล์โมเดลเป็นชื่อใหม่ เช่น `custom-model.eim` ให้แก้จุดอ้างอิง 2 ไฟล์:
-
-1. **[`app.yaml`](file:///home/ctrlaltnate/Downloads/TelegramFireBot/TelegramFireBot/app.yaml)** (บรรทัดที่ 8–9):
-   ```yaml
-   bricks:
-   - arduino:video_object_detection:
-       variables:
-         EI_OBJ_DETECTION_MODEL: /home/arduino/.arduino-bricks/ei-models/custom-model.eim
-         EI_V_OBJ_DETECTION_MODEL: /home/arduino/.arduino-bricks/ei-models/custom-model.eim
-   ```
-2. **[`python/main.py`](file:///home/ctrlaltnate/Downloads/TelegramFireBot/TelegramFireBot/python/main.py)** (บรรทัดที่ 46):
-   ```python
-   # Edge Impulse Model Path
-   MODEL_PATH = "custom-model.eim"
-   ```
+#### วิธีการทำทีละสเต็ป:
+1. **ดาวน์โหลดโมเดลจาก Edge Impulse**:
+   - เข้าสู่โปรเจกต์ของคุณบน [Edge Impulse Studio](https://studio.edgeimpulse.com/)
+   - ไปที่แถบเมนู **Deployment** ทางซ้ายมือ
+   - ในช่องค้นหา Deployment options ให้พิมพ์เลือก **Linux (ARM)** หรือ **Linux (AARCH64)** ตามสถาปัตยกรรมชิป
+   - คลิกปุ่ม **Build** เพื่อสร้างแพ็กเกจไบนารี จะได้ไฟล์นามสกุล `.eim` ออกมา (เช่น `my-new-model.eim`)
+2. **เปลี่ยนชื่อไฟล์โมเดลใหม่ ให้เป็นชื่อเดิม**:
+   - เปลี่ยนชื่อไฟล์ที่เพิ่งดาวน์โหลดมาให้กลายเป็นชื่อเดิมเป๊ะๆ:
+     ```bash
+     wildfire-dt-model.eim
+     ```
+3. **วางทับ (Overwrite/Replace) ไฟล์เดิมในโฟลเดอร์โปรเจกต์**:
+   - นำไฟล์ `wildfire-dt-model.eim` ตัวใหม่นี้ ไปคัดลอกวางทับไฟล์เดิมในโฟลเดอร์โปรเจกต์ (หรือลากใส่ไฟล์ Zip ทับไฟล์เดิม) ได้ทันที!
+   - **เสร็จสิ้น!** ไม่ต้องไปแตะต้องไฟล์ `app.yaml` หรือชื่อโมเดลใน Python เลย
 
 ---
 
-### ขั้นตอนที่ 3: การกำหนด Keyword เฉพาะที่หัวโค้ด Python
+### ขั้นตอนที่ 2: กำหนด Keyword และธีมที่หัวโค้ด Python (แก้ที่เดียว เว็บเปลี่ยนตามทั้งหมด!)
 
-เปิดไฟล์ **[`python/main.py`](file:///home/ctrlaltnate/Downloads/TelegramFireBot/TelegramFireBot/python/main.py)** และดูที่ส่วนหัวของโค้ดในบล็อก `USER CONFIGURATION` (บรรทัดที่ 30–33):
+ระบบ TelegramFireBot ได้รับการออกแบบสถาปัตยกรรมให้มี **Single Source of Truth**:
+> [!TIP]
+> **🌟 แก้จุดเดียว เปลี่ยนครบทั้งระบบ (1-Click Centralized Configuration):**
+> คุณสามารถเปิดไฟล์ **[`python/main.py`](file:///home/ctrlaltnate/Downloads/TelegramFireBot/TelegramFireBot/python/main.py)** แล้วแก้ไขเฉพาะบล็อก `⚙️ USER CONFIGURATION` (บรรทัดที่ 30–42) **ไม่ต้องเข้าไปแก้ไขไฟล์ `index.html` หรือ `app.js` เลยแม้แต่บรรทัดเดียว!**
+> เมื่อเปิดหน้าเว็บแดชบอร์ด ระบบจะซิงค์ข้อมูลผ่าน Socket.IO ปรับเปลี่ยนชื่อระบบ, ไอคอน, แผงตรวจวัด, ป้ายสไลเดอร์, กล่อง HUD วิดีโอสด และข้อความ Telegram Alert ให้ตรงกันทั้งหมดโดยอัตโนมัติ!
+
+#### การตั้งค่าใน [`python/main.py`](file:///home/ctrlaltnate/Downloads/TelegramFireBot/TelegramFireBot/python/main.py):
 
 ```python
 # ==========================================
-# USER CONFIGURATION
+# ⚙️ USER CONFIGURATION (ส่วนตั้งค่าสำหรับผู้ใช้งาน)
+# 🌟 แก้จุดนี้จุดเดียว! หน้าเว็บแดชบอร์ด, สไลเดอร์, กล่อง HUD วิดีโอสด และ Telegram จะเปลี่ยนตามทั้งหมดอัตโนมัติ
 # ==========================================
-# AI Model Target Detection Class / Keywords
-TARGET_LABEL = "person"          # Keyword จากโมเดล Edge Impulse (เช่น "fire", "person", "helmet")
-TARGET_DISPLAY_NAME = "Person"   # ชื่อที่ต้องการให้แสดงผลบนหน้าจอ, HUD และ Telegram Alert
+# ค่าตั้งต้นเดิมของระบบ: ตรวจจับไฟ (Fire)
+TARGET_LABEL = "fire"              # Keyword จากโมเดล Edge Impulse เช่น "fire", "person", "smoke", "helmet", "car"
+TARGET_DISPLAY_NAME = "Fire"       # ชื่อแสดงผล เช่น "Fire", "Person", "Safety Helmet"
+TARGET_ICON = "🔥"                 # ไอคอนแสดงผล เช่น "🔥", "👤", "⛑️", "🚗", "🎯"
+APP_TITLE = "Fire & Smoke AI"      # ชื่อหัวเว็บ/ระบบ เช่น "Fire & Smoke AI", "Person AI Guard"
 ```
 
-- **`TARGET_LABEL`**: ใส่ชื่อคลาส (Class Label) ให้ตรงกับตอนที่เทรนใน Edge Impulse (เช่น หากโมเดลตรวจจับคน Label ใน Edge Impulse ชื่อ `person` ก็ใส่ `"person"`)
-- **`TARGET_DISPLAY_NAME`**: ใส่ชื่อที่อ่านง่ายสำหรับการแสดงผล เช่น `"Person"`, `"Safety Helmet"`, หรือ `"Fire"`
-- **ผลลัพธ์**: 
-  - ระบบจะคัดกรองเฉพาะ Bounding Box ที่ตรงกับ Keyword นี้มาประเมิน
-  - ข้อความเตือนภัยและ HUD บนกล้องวิดีโอจะเปลี่ยนชื่อเป้าหมายเป็นชื่อนี้ทันที
-  - ข้อความแจ้งเตือนทาง Telegram จะเปลี่ยนบรรทัดรายงานเป็น `🎯 Person Level: XX.X%` ทันที
+**ตัวอย่างเมื่อต้องการเปลี่ยนไปตรวจจับ "คน" (`Person`):**
+เพียงแค่เปลี่ยนค่าในบล็อกนี้ใน `python/main.py`:
+
+```python
+TARGET_LABEL = "person"            # Label ให้ตรงกับที่เทรนใน Edge Impulse
+TARGET_DISPLAY_NAME = "Person"     # ชื่อแสดงผล
+TARGET_ICON = "👤"                 # ไอคอนบนหน้าเว็บและ Telegram
+APP_TITLE = "Person AI Guard"      # ชื่อหัวเว็บแดชบอร์ด
+```
+
+#### สิ่งที่ระบบจะอัปเดตให้อัตโนมัติทันที:
+1. **🌐 Web Dashboard (หน้าเว็บแดชบอร์ด)**:
+   - ไอคอนหัวเว็บเปลี่ยนเป็น `👤`
+   - ชื่อหัวเว็บเปลี่ยนเป็น `Person AI Guard`
+   - แผง Telemetry เปลี่ยนเป็น `👤 Person Level (AI)`
+   - ป้ายกำกับสไลเดอร์เปลี่ยนเป็น `👤 Person Camera Threshold`
+   - ข้อความคำอธิบายสไลเดอร์และบันทึกแจ้งเตือนเปลี่ยนเป็น `Person Alert` อัตโนมัติ
+2. **📹 กล้องสด (Live Video & HUD Overlay)**:
+   - กรอบ Bounding Box สีแดงจะครอบจับเฉพาะคลาส `person` และมีป้ายชื่อ `Person: XX%`
+   - กล่องข้อมูล HUD มุมบนซ้ายจะแสดง `Person (AI): XX.X% (Th: 80%)`
+3. **🚨 Telegram Alert**:
+   - ข้อความแจ้งเตือนจะส่งว่า: `🚨 ALARM: Person Detected! 🚨`
+   - บรรทัดรายงานระดับความมั่นใจจะแสดง: `👤 Person Level: XX.X%`
 
 ---
 
-### ขั้นตอนที่ 4: การแก้ไขหน้าเว็บไซต์แบบครบถ้วน (Website Customization Guide)
+### ขั้นตอนที่ 3: (ทางเลือกเสริม) การเปลี่ยนชื่อแอปในการ์ดของ App Lab
 
-*(ตามแนวทางที่ 2: การปรับแต่งโค้ดหน้าเว็บแบบ Manual ถาวร เพื่อเปลี่ยนธีม ไอคอน และข้อความให้เข้ากับโมเดลใหม่อย่างสมบูรณ์แบบ)*
+หากต้องการให้ชื่อการ์ดแอปพลิเคชันในโปรแกรม **Arduino App Lab** เปลี่ยนชื่อด้วย สามารถเข้าไปแก้ที่ไฟล์ [`app.yaml`](file:///home/ctrlaltnate/Downloads/TelegramFireBot/TelegramFireBot/app.yaml) ได้โดยตรง:
 
-#### 4.1 แก้ไขไฟล์ [`assets/index.html`](file:///home/ctrlaltnate/Downloads/TelegramFireBot/TelegramFireBot/assets/index.html)
-- **จุดที่ 1: ชื่อแบรนด์และไอคอนหัวเว็บ (บรรทัดที่ 22–25)**
-  ```html
-  <span class="brand-icon">👤</span> <!-- เปลี่ยนจาก 🔥 เป็นไอคอนที่ต้องการ -->
-  <div class="brand-text">
-      <h1>Person AI Guard</h1>       <!-- เปลี่ยนชื่อระบบหัวเว็บ -->
-      <span class="sub-brand">Safeguard Monitoring System</span>
-  </div>
-  ```
-- **จุดที่ 2: ข้อความแสดงระดับตรวจจับบนแผง Telemetry (บรรทัดที่ 75)**
-  ```html
-  <span id="ai-target-title">👤 Person Level (AI)</span>
-  ```
-- **จุดที่ 3: ป้ายกำกับบนสไลเดอร์ปรับเกณฑ์แจ้งเตือน (บรรทัดที่ 147)**
-  ```html
-  <label id="fire-slider-label" for="fire-slider">👤 Person Camera Threshold</label>
-  ```
-
-#### 4.2 แก้ไขไฟล์ [`assets/app.js`](file:///home/ctrlaltnate/Downloads/TelegramFireBot/TelegramFireBot/assets/app.js)
-- **จุดที่ 1: ข้อความประวัติการแจ้งเตือน (Dispatch Log) (บรรทัดที่ 304)**
-  ```javascript
-  // เปลี่ยนข้อความในแถบประวัติ 5 รายการล่าสุด
-  li.innerHTML = `<span>🚨 Person Alert Notification Sent</span> <strong>${timeStr}</strong>`;
-  ```
-
-#### 4.3 แก้ไขไฟล์ [`app.yaml`](file:///home/ctrlaltnate/Downloads/TelegramFireBot/TelegramFireBot/app.yaml)
-- **จุดที่ 1: ข้อมูลการแสดงผลของการ์ดแอปใน Arduino App Lab (บรรทัดที่ 1–2 และ 11)**
-  ```yaml
-  name: TelegramPersonBot
-  description: Person Detection with Telegram Alert
-  ...
-  icon: 👤
-  ```
+```yaml
+name: TelegramPersonBot
+description: Person Detection with Telegram Alert
+...
+icon: 👤
+```
+*(หากไม่แก้ App Lab จะยังคงแสดงการ์ดชื่อเดิม แต่การทำงานและหน้าเว็บจะทำงานด้วยโมเดลใหม่ 100%)*
 
 ---
 
-### ขั้นตอนที่ 5: การลบแอปเดิมและ Import ใหม่ใน App Lab เพื่อล้างแคช
+### ขั้นตอนที่ 4: การลบแอปเดิมและ Import ใหม่ใน App Lab เพื่อล้างแคช
 
 เมื่อมีการสลับโมเดล AI ไบนารี `.eim` ตัวใหม่ คอนเทนเนอร์ของ Arduino App Lab อาจมีการแคชไฟล์โมเดลเก่าไว้ **วิธีที่สะอาด ถูกต้อง และไม่เกิดปัญหาแคชค้าง 100% คือ**:
 
@@ -566,7 +442,7 @@ TARGET_DISPLAY_NAME = "Person"   # ชื่อที่ต้องการใ
           ↓
 [ 2. คลิกปุ่ม '...' บนการ์ดแอป แล้วเลือก 'Delete' เพื่อลบแอปเดิมออกจากบอร์ด ]
           ↓
-[ 3. คลิก 'Import App' แล้วเลือกไฟล์ Zip หรือโฟลเดอร์โปรเจกต์ที่อัปเดตโมเดลแล้ว ]
+[ 3. คลิก 'Import App' แล้วเลือกไฟล์ Zip หรือโฟลเดอร์โปรเจกต์ที่วางโมเดลใหม่แล้ว ]
           ↓
 [ 4. กด 'Run' เพื่อให้ App Lab สร้างคอนเทนเนอร์และโหลดโมเดลใหม่อย่างบริสุทธิ์ ]
 ```
@@ -578,11 +454,20 @@ TARGET_DISPLAY_NAME = "Person"   # ชื่อที่ต้องการใ
 5. รอ App Lab แตกไฟล์และจัดเตรียม จากนั้นกดปุ่ม **Run**
 6. ตรวจสอบในแท็บ Logs จะต้องพบข้อความ:
    ```
-   Ensured executable permissions for /.../your-model.eim
-   Edge Impulse model initialized successfully
+   Ensured executable permissions for /.../wildfire-dt-model.eim
+   Edge Impulse model initialized successfully from: /.../wildfire-dt-model.eim
    Model info: ...
    ```
    ระบบจะเริ่มทำงานด้วยโมเดลใหม่ Keyword ใหม่ และหน้าเว็บใหม่ทันที!
+
+---
+
+### กรณีพิเศษ: หากต้องการตั้งชื่อไฟล์โมเดลเป็นชื่ออื่นจริงๆ (ไม่แนะนำเพราะต้องแก้หลายจุด)
+
+หากจำเป็นต้องตั้งชื่อไฟล์โมเดลเป็นชื่ออื่น เช่น `custom-model.eim` คุณจะต้องไปตามแก้จุดอ้างอิงเอง 2 ไฟล์:
+1. **[`app.yaml`](file:///home/ctrlaltnate/Downloads/TelegramFireBot/TelegramFireBot/app.yaml)** (บรรทัดที่ 8–9): แก้ไขตัวแปร `EI_OBJ_DETECTION_MODEL` และ `EI_V_OBJ_DETECTION_MODEL` เป็นชื่อใหม่
+2. **[`python/main.py`](file:///home/ctrlaltnate/Downloads/TelegramFireBot/TelegramFireBot/python/main.py)** (บรรทัดที่ 46): แก้ไข `MODEL_PATH = "custom-model.eim"`
+*(แนะนำให้ใช้วิธีเปลี่ยนชื่อเป็น `wildfire-dt-model.eim` แล้ววางทับตาม **ขั้นตอนที่ 1** จะง่าย รวดเร็ว และปลอดภัยที่สุด)*
 
 ---
 
@@ -635,6 +520,8 @@ TARGET_DISPLAY_NAME = "Person"   # ชื่อที่ต้องการใ
 | `INPUT_MODE` | `"WEBCAM"` | โหมดรับภาพ: ใช้ `"WEBCAM"` สำหรับกล้อง USB ทั่วไป |
 | `TARGET_LABEL` | `"fire"` | Keyword คลาสที่ต้องการตรวจจับจากโมเดล Edge Impulse (เช่น `"fire"`, `"person"`, `"helmet"`) |
 | `TARGET_DISPLAY_NAME` | `"Fire"` | ชื่อที่ต้องการแสดงบนหน้าจอแดชบอร์ด, HUD และในข้อความ Telegram |
+| `TARGET_ICON` | `"🔥"` | ไอคอนประจำคลาสที่จะแสดงบนหน้าเว็บและ Telegram (เช่น `"🔥"`, `"👤"`, `"⛑️"`, `"🚗"`, `"🎯"`) |
+| `APP_TITLE` | `"Fire & Smoke AI"` | ชื่อระบบบนหัวเว็บแดชบอร์ด (เช่น `"Fire & Smoke AI"`, `"Person AI Guard"`) |
 | `TELEGRAM_TOKEN` | `"8859583...nmXI"` | Bot Token ที่ได้รับจาก `@BotFather` |
 | `TELEGRAM_CHAT_ID` | `"7246017877"` | Chat ID ของผู้ใช้ หรือ Group ID ของกลุ่ม Telegram ที่ต้องการรับแจ้งเตือน |
 | `DEFAULT_FIRE_THRESHOLD` | `80.0` | เกณฑ์ความมั่นใจตรวจจับไฟเริ่มต้น (1% – 100%) หากแตะเกณฑ์จะหมุน Servo และส่ง Telegram |
